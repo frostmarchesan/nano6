@@ -11,7 +11,7 @@ import SwiftUI
 struct nano6App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView(carConfigs: carStats)
+            ContentView()
         }
     }
 }

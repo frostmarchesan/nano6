@@ -13,9 +13,6 @@
 		2E4CC56826D41A330086110C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E4CC56726D41A330086110C /* Preview Assets.xcassets */; };
 		2E4CC57326D41A330086110C /* nano6Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4CC57226D41A330086110C /* nano6Tests.swift */; };
 		2E4CC57E26D41A330086110C /* nano6UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4CC57D26D41A330086110C /* nano6UITests.swift */; };
-		2E4CC58C26D41D9E0086110C /* CarConfigs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4CC58B26D41D9E0086110C /* CarConfigs.swift */; };
-		2E4CC58E26D41DB30086110C /* CarStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4CC58D26D41DB30086110C /* CarStats.swift */; };
-		2E4CC59026D41DCB0086110C /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4CC58F26D41DCB0086110C /* Stats.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,9 +45,6 @@
 		2E4CC57926D41A330086110C /* nano6UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nano6UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E4CC57D26D41A330086110C /* nano6UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nano6UITests.swift; sourceTree = "<group>"; };
 		2E4CC57F26D41A330086110C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2E4CC58B26D41D9E0086110C /* CarConfigs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarConfigs.swift; sourceTree = "<group>"; };
-		2E4CC58D26D41DB30086110C /* CarStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarStats.swift; sourceTree = "<group>"; };
-		2E4CC58F26D41DCB0086110C /* Stats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stats.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,9 +100,6 @@
 				2E4CC56426D41A330086110C /* Assets.xcassets */,
 				2E4CC56926D41A330086110C /* Info.plist */,
 				2E4CC56626D41A330086110C /* Preview Content */,
-				2E4CC58B26D41D9E0086110C /* CarConfigs.swift */,
-				2E4CC58D26D41DB30086110C /* CarStats.swift */,
-				2E4CC58F26D41DCB0086110C /* Stats.swift */,
 			);
 			path = nano6;
 			sourceTree = "<group>";
@@ -268,10 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E4CC58C26D41D9E0086110C /* CarConfigs.swift in Sources */,
-				2E4CC59026D41DCB0086110C /* Stats.swift in Sources */,
 				2E4CC56326D41A320086110C /* ContentView.swift in Sources */,
-				2E4CC58E26D41DB30086110C /* CarStats.swift in Sources */,
 				2E4CC56126D41A320086110C /* nano6App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
