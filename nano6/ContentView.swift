@@ -88,7 +88,10 @@ struct ContentView: View {
                                 .frame(width: 95, height: 30, alignment: .trailing)
                                 .background(Color.gray.opacity(0.15)).cornerRadius(10)
                                 .keyboardType(.decimalPad)
+                                
                         }
+                    }
+                    Section {
                         
                         Picker("Fuel type", selection: $fuelType) {
                             ForEach(Array(rangeOfFuelType.keys), id: \.self) {
@@ -167,7 +170,6 @@ struct ContentView: View {
                         }
                     } // Section
                 } // Form
-                
                 .navigationBarTitle("CarCulator")
                 
                 Button(action: calculate, label: {
