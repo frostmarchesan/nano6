@@ -13,8 +13,8 @@
 		2E4CC56826D41A330086110C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E4CC56726D41A330086110C /* Preview Assets.xcassets */; };
 		2E4CC57326D41A330086110C /* nano6Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4CC57226D41A330086110C /* nano6Tests.swift */; };
 		2E4CC57E26D41A330086110C /* nano6UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4CC57D26D41A330086110C /* nano6UITests.swift */; };
-		8B58F70F26D575840018C58D /* Auto.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8B58F70E26D575840018C58D /* Auto.mlmodel */; };
-		8B8DEFB126D6D66E00316180 /* mean_Maker.json in Resources */ = {isa = PBXBuildFile; fileRef = 8B8DEFB026D6D66E00316180 /* mean_Maker.json */; };
+		2EA7636426D8070600124404 /* Auto.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 2EA7636326D8070600124404 /* Auto.mlmodel */; };
+		2EA7636626D8075800124404 /* mean_Maker.json in Resources */ = {isa = PBXBuildFile; fileRef = 2EA7636526D8075800124404 /* mean_Maker.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +47,8 @@
 		2E4CC57926D41A330086110C /* nano6UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nano6UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E4CC57D26D41A330086110C /* nano6UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nano6UITests.swift; sourceTree = "<group>"; };
 		2E4CC57F26D41A330086110C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8B58F70E26D575840018C58D /* Auto.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Auto.mlmodel; sourceTree = "<group>"; };
-		8B8DEFB026D6D66E00316180 /* mean_Maker.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = mean_Maker.json; path = ../../../../Downloads/mean_Maker.json; sourceTree = "<group>"; };
+		2EA7636326D8070600124404 /* Auto.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Auto.mlmodel; sourceTree = "<group>"; };
+		2EA7636526D8075800124404 /* mean_Maker.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mean_Maker.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +100,9 @@
 			isa = PBXGroup;
 			children = (
 				2E4CC56026D41A320086110C /* nano6App.swift */,
-				8B8DEFB026D6D66E00316180 /* mean_Maker.json */,
+				2EA7636526D8075800124404 /* mean_Maker.json */,
 				2E4CC56226D41A320086110C /* ContentView.swift */,
+				2EA7636326D8070600124404 /* Auto.mlmodel */,
 				2E4CC56426D41A330086110C /* Assets.xcassets */,
 				2E4CC56926D41A330086110C /* Info.plist */,
 				2E4CC56626D41A330086110C /* Preview Content */,
@@ -238,9 +239,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B8DEFB126D6D66E00316180 /* mean_Maker.json in Resources */,
 				2E4CC56826D41A330086110C /* Preview Assets.xcassets in Resources */,
 				2E4CC56526D41A330086110C /* Assets.xcassets in Resources */,
+				2EA7636626D8075800124404 /* mean_Maker.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E4CC56326D41A320086110C /* ContentView.swift in Sources */,
+				2EA7636426D8070600124404 /* Auto.mlmodel in Sources */,
 				2E4CC56126D41A320086110C /* nano6App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
