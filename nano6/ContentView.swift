@@ -4,7 +4,7 @@
 //
 //  Created by marcelo frost marchesan on 23/08/21.
 //
-
+import UIKit
 import SwiftUI
 
 struct ContentView: View {
@@ -90,32 +90,20 @@ struct ContentView: View {
                                 .keyboardType(.decimalPad)
                         }
                         
-                        //                        Stepper(value: $engineSize, in: 0...400, step: 0.5) {
-                        //                            Text("Engine-size (CC) \(engineSize, specifier: "%g")")
-                        //                        }
-                        //
-                        //                        Stepper(value: $horsepower, in: 0...300, step: 0.5) {
-                        //                            Text("Horsepower (HP) \(horsepower, specifier: "%g")")
-                        //                        }
-                        //
-                        //                        Stepper(value: $cityMPG, in: 0...70, step: 0.5) {
-                        //                            Text("City MPG(Miles per gallon) \(cityMPG, specifier: "%g")")
-                        //                        }
-                        //
-                        //                        Stepper(value: $highwayMPG, in: 0...70, step: 0.5) {
-                        //                            Text("Highway MPG(Miles per gallon) \(highwayMPG, specifier: "%g")")
-                        //                        }
-                        
                         Picker("Fuel type", selection: $fuelType) {
                             ForEach(Array(rangeOfFuelType.keys), id: \.self) {
                                 Text("\($0)")
-                            }
+                            }.onTapGesture {
+                                hideKeyboard()
+                             }
                         }
                         
                         Picker("Aspiration", selection: $aspiration) {
                             ForEach(Array(rangeOfAspiration.keys), id: \.self) {
                                 Text("\($0)")
-                            }
+                            }.onTapGesture {
+                                hideKeyboard()
+                             }
                         }
                         
                         Picker("Doors", selection: $doors) {
@@ -123,49 +111,63 @@ struct ContentView: View {
                                 if $0 != 3 {
                                     Text("\($0)")
                                 }
-                            }
+                            }.onTapGesture {
+                                hideKeyboard()
+                             }
                         }
                         
                         Picker("Body style", selection: $bodyStyle) {
                             ForEach(Array(rangeOfBodyStyle.keys), id: \.self) {
                                 Text("\($0)")
-                            }
+                            }.onTapGesture {
+                                hideKeyboard()
+                             }
                         }
                         
                         Picker("Drive wheels", selection: $driveWheels) {
                             ForEach(Array(rangeOfDriveWheels.keys), id: \.self) {
                                 Text("\($0)")
-                            }
+                            }.onTapGesture {
+                                hideKeyboard()
+                             }
                         }
-                    }
+                    } // Section
                     
                     Section {
                         Picker("Engine location", selection: $engineLocation) {
                             ForEach(Array(rangeOfEngineLocation.keys), id: \.self) {
                                 Text("\($0)")
-                            }
+                            }.onTapGesture {
+                                hideKeyboard()
+                             }
                         }
                         
                         Picker("Engine type", selection: $engineType) {
                             ForEach(Array(rangeOfEngineType.keys), id: \.self) {
                                 Text("\($0)")
-                            }
+                            }.onTapGesture {
+                                hideKeyboard()
+                             }
                         }
                         
                         Picker("Cylinders", selection: $cylinders) {
                             ForEach(Array(rangeOfCylinders.keys), id: \.self) {
                                 Text("\($0)")
-                            }
+                            }.onTapGesture {
+                                hideKeyboard()
+                             }
                         }
                         
                         Picker("Fuel system", selection: $fuelSystem) {
                             ForEach(Array(rangeOfFuelSystem.keys), id: \.self) {
                                 Text("\($0)")
-                            }
+                            }.onTapGesture {
+                                hideKeyboard()
+                             }
                         }
-                    }
-                    
-                }
+                    } // Section
+                } // Form
+                
                 .navigationBarTitle("CarCulator")
                 
                 Button(action: calculate, label: {
@@ -180,9 +182,9 @@ struct ContentView: View {
                     .overlay(RoundedRectangle(cornerRadius: 15)
                                 .stroke(Color.red, lineWidth: 3))
                 
-            }
-        }
-    }
+            } // VStack
+        } // NavigationView
+    } // View
     
     func setValues() {
         
@@ -378,6 +380,13 @@ struct Values: Codable {
     var Smpfi: Double
     var Sspdi: Double
     var Sspfi: Double
+}
+
+extension View {
+    func hideKeyboard(){
+        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {
